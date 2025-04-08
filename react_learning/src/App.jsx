@@ -1,3 +1,4 @@
+//  App.jsx File 
 import Counter from "./components/Counter"
 import BackgroundChanger from "./components/BackgroundChanger"
 import ParaToggle from "./components/ParaToggle";
