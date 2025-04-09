@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useMemo } from "react";
 
 
 const data = [
@@ -52,10 +52,13 @@ const data = [
 
 function Body({search,addValue }) {
   
-  const filterData = data.filter((item) =>
-    item.title.toLowerCase().includes(search.toLowerCase())
-  );
- 
+  const filterData = useMemo(()=>{
+    return data.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase()))}, [search]);
+
+  useEffect(()=>{
+    alert("you sha")
+  },[])
   return (
     <>
       <div className="body">

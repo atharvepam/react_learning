@@ -1,29 +1,22 @@
 import React from "react";
-
-import { useState } from "react";
+import Counter from './components/Counter';
 import "./App.css";
+import Effect from "./components/Effect";
+import Form from "./components/Form";
+import Expensive from "./components/Expensive";
+import ParentCallback from "./components/ParentCallback";
 
 function App() {
-  const [counter, setCounter] = useState(0);
-  const incValue = () => {
-    if (counter < 20) {
-      setCounter(counter + 1);
-    }
-  };
-  const decValue = () => {
-    if (counter > 0) {
-      setCounter(counter - 1);
-    }
-  };
-
+ 
   return (
     <>
-      <h2>Counter application</h2>
-      <h3>COUNTER : {counter}</h3>
-      <button onClick={incValue}>Increase</button>
-      <br />
-      <br />
-      <button onClick={decValue}>Decrease</button>
+      
+      {/* <Counter /> */}
+      {/* <Effect />       */}
+      {/* <Form /> */}
+      {/* <Expensive /> */}
+      <ParentCallback />
+      
     </>
   );
 }
