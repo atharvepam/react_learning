@@ -21,7 +21,7 @@ function FunctionalCounter() {
         })
 
     },[count])
-
+// Use cases of cleaner functions  - setTimeout, setIntervals, remove event Listners
   return (
     <div>Counter:{count}
     <button onClick={addValue}>Clickme</button>

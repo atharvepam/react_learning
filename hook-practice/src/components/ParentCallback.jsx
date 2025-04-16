@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { memo,useCallback, useState } from 'react'
 import ChildCallback from "./ChildCallback"
 function ParentCallback() {
     const [count,setCount]=useState(0);
@@ -11,10 +11,10 @@ function ParentCallback() {
     }
     const call =useCallback(()=>{
         console.log("child called")
-    },[])
+    })
   return (
     <>
-    <ChildCallback count2={count2} call={call}/>
+    <ChildCallback count={count} call={call} />
     <h1>Counter1 :{count}</h1>
     <h1>Counter2 :{count2}</h1>
     <button onClick={incValue1}>Increase Counter 1</button>

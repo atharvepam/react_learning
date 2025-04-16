@@ -54,10 +54,10 @@ function Body({search,addValue }) {
   
   const filterData = useMemo(()=>{
     return data.filter((item) =>
-    item.title.toLowerCase().includes(search.toLowerCase()))}, [search]);
+    item.title.toLowerCase().includes((search || '').toLowerCase()))}, [search]);
 
   useEffect(()=>{
-    alert("you sha")
+    
   },[])
   return (
     <>

@@ -1,12 +1,12 @@
 import React,{memo,useEffect} from 'react'
 
-function ChildCallback({count2,call}) {
+function ChildCallback({count,call}) {
     useEffect(() => {
-        call();
-      }, [call]);
+    call();
+  }, [call]);
   return (
     <>
-    {console.log("child called",count2)}
+    {console.log("child called",count)}
     <div>ChildCallback</div>
     
     

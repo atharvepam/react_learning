@@ -1,14 +1,14 @@
-
-import './App.css'
-
+import "./App.css";
+import React from "react";
+import useFetch from "./Hooks/useFetch";
 function App() {
-  
+  const data = useFetch("https://dummyjson.com/users");
 
   return (
     <>
-      <h1>Hook</h1>
+      {data.users.map((res) =>  <h1>{res.firstName}</h1>)}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import "./App.css";
+import Main2 from "./main2";
 import { useState } from "react";
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
         <button id="1" onClick={toggleBG}>{theme?"light":"dark"}</button>
         <Header setSearch={setSearch} count={count} />
         <Body search={search} addValue={addValue}/>
+        <h2>main2</h2>
+        <Main2 />
+        
         <Footer />
       </div>
     </>

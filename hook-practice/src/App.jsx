@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       
-      {/* <Counter /> */}
+      <Counter />
       {/* <Effect />       */}
       {/* <Form /> */}
       {/* <Expensive /> */}
-      <ParentCallback />
+      {/* <ParentCallback /> */}
       
     </>
   );
